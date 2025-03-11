@@ -1,7 +1,7 @@
 (:name           "subread")
 (:repo           "taffish-org/subread")
 (:author         "KaiyuanHan")
-(:version        "2.0.2")
+(:version        "2.0.6")
 (:intro          "The Subread software package is a tool kit for processing next-gen sequencing data. It includes Subread aligner, Subjunc exon-exon junction detector and featureCounts read summarization program.")
 (:dependencies)
 (:functions      "cell-counts"

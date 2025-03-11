@@ -23,5 +23,5 @@ ARGS
         # subread-fullscan
         # txUnique
 RUN
-    <container:taf-subread-v2.0.2:ghcr.io/taffish-org/subread:2.0.2>
+    <container:taf-subread-v2.0.6:ghcr.io/taffish-org/subread:2.0.6>
         ::*MAIN*::

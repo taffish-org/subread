@@ -6,9 +6,13 @@ WORKDIR /root
 
 COPY . .
 
-RUN apt-get update && \
-    apt-get install -y git gcc g++ make zlib1g-dev && \
-    git clone --recursive https://github.com/ShiLab-Bioinformatics/subread && \
+RUN apt-get update
+
+RUN apt-get install -y curl git gcc g++ make 
+
+RUN apt-get install -y zlib1g-dev
+
+RUN git clone --recursive https://github.com/ShiLab-Bioinformatics/subread && \
     cd subread/src && make -f Makefile.Linux && \
     mv ../bin/utilities/* ../bin/ && \
     rmdir ../bin/utilities && \
